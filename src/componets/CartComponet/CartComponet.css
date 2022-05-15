@@ -1,0 +1,18 @@
+#cartImg{
+    width: 35px;
+    height: 35px;
+    
+}
+#Cart-container-logo{
+   
+    position: fixed;
+    bottom:5px;
+    right: 5px;
+}
+
+#cartPara{
+    font-size: medium;
+    color: red;
+    float: right;
+   
+}

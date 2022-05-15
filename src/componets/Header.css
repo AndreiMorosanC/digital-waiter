@@ -1,0 +1,49 @@
+.headbar-main-container{
+    width: 100%;
+    height: 3rem;
+    position: relative;
+}
+.headbar-child1-container{
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    background-color:#0085FF;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+   
+    
+  
+}
+.headbar-child2-container{
+    z-index: -1;
+    width: 110px;
+    height: 7rem;
+    border-bottom-right-radius: 90%;
+
+}
+
+
+
+#Headbar-logo-namerestaurant{
+    
+    height: 6rem;
+    width: 6rem;
+    align-self: center;
+    border-radius: 50%;
+}
+#header-para{
+    color: black;
+    font-size: 2.4rem;
+    font-family: 'Koulen', cursive;
+    
+}
+#header-para-p{
+    text-align: center;
+    
+    
+}
+a{
+    text-decoration: none;
+}

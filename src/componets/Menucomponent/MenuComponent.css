@@ -1,0 +1,32 @@
+.Main-Menu-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 3rem;
+    
+}
+.menu-container-item-true{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+    .Menu-item-container{
+       
+    }
+    .Menu-Item-Logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    
+    .Img-menu{
+        width: 2rem;
+        height: 2rem;
+    }
+    .menu-item-Food{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3px;
+    }
