@@ -6,6 +6,7 @@ import Header from './componets/Header';
 import Home from "./Pages/Home";
 import Cart from './componets/CartComponet/Cart';
 import backgroundImg from "./componets/images/depositphotos_115402612-stock-illustration-cooking-food-seamless-background.jpg"
+
 function App() {
   return (
     <div className='Body-background'>
@@ -13,9 +14,10 @@ function App() {
           <Header/>      
           <Routes>
             <Route path='/' element={<Home/>}/>
-           
+            
 
           </Routes>
+          
       </BrowserRouter>
     </div>
   );

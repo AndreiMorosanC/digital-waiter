@@ -1,7 +1,7 @@
 const ListMenuOne =[
         {
             id:1,
-            name:"pizza ",
+            name:"pizza 4 quesos ",
             price:15,
             value:1
         },

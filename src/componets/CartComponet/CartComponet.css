@@ -1,18 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
 #cartImg{
     width: 35px;
     height: 35px;
     
 }
-#Cart-container-logo{
-   
-    position: fixed;
-    bottom:5px;
-    right: 5px;
-}
 
-#cartPara{
-    font-size: medium;
-    color: red;
-    float: right;
-   
+
+
+.Cart-btn{
+    background-color: #0085FF;
+    height: 1.5rem;
+    width: 7rem;
+    
+    color: white;
+    font-family: 'Manjari', sans-serif;
+    font-size: 1rem;
 }

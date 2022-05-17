@@ -11,23 +11,23 @@ const MenuItem = (props)=>{
     function CloseOpenMenu(){
         if(state === true){
             return(
-                <div className="menu-container-item-true">
-
-                    <div className="menu-item-Food">
-                        <p>{data.name}</p>
-                        <p>${data.price}</p>
-                        <button onClick={()=>onAdd(data)} >Lo quiero</button>
-                    </div>
-                </div>
+                    <ul className="ul-menuMain">
+                        <li id="li-menuMain">
+                            <div className="MenuMain-item">
+                                <p className="p-item-li">{data.name}</p>
+                                <p className="p-item-li" >{data.price}€</p>
+                                <button id="btn-item-li" onClick={()=>onAdd(data)} >ADD🤤</button>
+                           </div>
+                        </li>
+                    </ul>
             )
         }
     }
 
     return(
-        <div className="Menu-item-container">
-           
+        <>        
             {CloseOpenMenu()}
-        </div>
+        </>
     )
 }
 

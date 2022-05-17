@@ -5,6 +5,12 @@ import ListMenuOne from "../DataMenu/ListMenuOne";
 import ListMenutwo from "../DataMenu/ListMenutwo";
 import Cart from "../componets/CartComponet/Cart";
 import "./Home.css"
+import pizzaMenu from "../componets/images/pizzamenu.jpg"
+import Burger from "../componets/images/hamburgermenu.png"
+import spaghetti from "../componets/images/spaghett.png"
+import desserts from "../componets/images/dessertsmenu.png"
+import CartList from "../componets/OrderList/CartList";
+
 const Home = (props)=>{
 
     const [cartItems,setCartItems] = useState([])
@@ -58,38 +64,37 @@ const Home = (props)=>{
 
     const MainContectMenu = ()=>{
         return(
-            <div>
+            <div className="container-main-content">
                 <MenuComponent                     
                 data={MenuPizza}
-                tittle={"pizza"}
+                tittle={"PIZZA"}
                 onAdd={onAdd}
+                imgTittle={pizzaMenu}
                 />
-                <MenuComponent
-                    data={Hamburguer}
-                    tittle={"hamburger"}
-                    onAdd={onAdd}
+                <MenuComponent                     
+                data={Hamburguer}
+                tittle={"BURGER"}
+                onAdd={onAdd}
+                imgTittle={Burger}
                 />
-                <MenuComponent
-                    data={Hamburguer}
-                    tittle={"hamburger X2"}
-                    onAdd={onAdd}
+                <MenuComponent                     
+                data={Hamburguer}
+                tittle={"SPAGHETTI"}
+                onAdd={onAdd}
+                imgTittle={spaghetti}
                 />
-                <MenuComponent
-                    data={Hamburguer}
-                    tittle={"hamburger X2"}
-                    onAdd={onAdd}
+                <MenuComponent                     
+                data={Hamburguer}
+                tittle={"DESSERTS"}
+                onAdd={onAdd}
+                imgTittle={desserts}
                 />
-                <MenuComponent
-                    data={Hamburguer}
-                    tittle={"hamburger X2"}
-                    onAdd={onAdd}
+                <CartList
+                     cartItems={cartItems}
+                     cartOpenClose={cartOpenClose}
+                     setCartOpenClose={setCartOpenClose}
                 />
-                <CartComponent
-                    CounterCart={cartItems.length}
-                    cartOpenClose={cartOpenClose}
-                    setCartOpenClose={setCartOpenClose}
-                    
-                /> 
+               
             </div>
         )
     }

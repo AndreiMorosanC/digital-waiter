@@ -4,12 +4,11 @@ import CartLogo from    "../images/cart-shopping.png"
 import "./CartComponet.css"
 const CartComponent = (props)=>{
 
-    const {CounterCart,setCartOpenClose,cartOpenClose} = props
+    const {setCartOpenClose,cartOpenClose} = props
 
     return(
             <div id="Cart-container-logo" onClick={()=> setCartOpenClose(!cartOpenClose)}>
-                <img src={CartLogo} alt="" id="cartImg"/>
-                <p id="cartPara">{CounterCart}</p>
+                <button className="Cart-btn" >FINISH ORDER</button>
             </div>
         
     )

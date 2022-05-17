@@ -1,0 +1,16 @@
+.CartList-main-container{
+ width: 15rem;
+ height: 7.5rem;
+ display: flex;
+ flex-direction: column;
+ align-self:center;   
+ background-color: #E9E7E7;
+ position: relative;
+}
+.btn-CartList{
+    height: 1.5rem;
+    width: 7rem;
+    position: absolute;
+    bottom: -10px;
+    left: 65px;
+}
