@@ -1,0 +1,10 @@
+.container-main-order{
+    display: flex;
+    flex-direction: row;
+
+}
+.container-main-cart{
+    background-color: white;
+    width: 17rem ;
+    height: 33rem;
+}

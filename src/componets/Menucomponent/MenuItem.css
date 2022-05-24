@@ -1,9 +1,8 @@
 
 .ul-menuMain{
-    
     align-self: center;
     width: 15rem;
-    height: 3rem;
+    height: 3.5rem;
     text-decoration: none;
     list-style: none;
     display: flex;
@@ -18,7 +17,7 @@
 }
 .MenuMain-item{
     width: 15rem;
-    height: 2.5rem;
+    height: 3rem;
     background-color: #CBF9FF;
     display: flex;
     flex-direction: row;

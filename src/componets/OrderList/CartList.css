@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 .CartList-main-container{
  width: 15rem;
  height: 7.5rem;
@@ -13,4 +14,26 @@
     position: absolute;
     bottom: -10px;
     left: 65px;
+}
+.CartList-container-OrderMap{
+    width: 100%;
+    height: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    
+}
+.OrderMap-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+#OrderMap-qty{
+font-family: 'Archivo Black', sans-serif;
+}
+#OrderMap-name{
+    
+    
 }

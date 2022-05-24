@@ -1,27 +1,27 @@
 const ListMenuOne =[
         {
             id:1,
-            name:"pizza 4 quesos ",
-            price:15,
+            name:"The Best Sausage",
+            price:12,
             value:1
         },
         {
             id:2,
-            name:"pizza con bacon",
-            price:15,
+            name:"Artichoke Chicken Pesto",
+            price:12,
             value:2
 
         },
         {
             id:3,
-            name:"pizza con jamon",
-            price:15,
+            name:"Barbecued Chicken",
+            price:12,
             value:3
         },
         {
             id:4,
-            name:"pizza con jamon",
-            price:15,
+            name:"Homemade",
+            price:12,
             value:4
         }
     

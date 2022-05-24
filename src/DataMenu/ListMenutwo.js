@@ -1,26 +1,26 @@
 const ListMenutwo =[
         {
             id:1,
-            name:"hamburguer ",
-            price:15,
+            name:"Bacon-and-Kimchi Burgers",
+            price:12,
             value:5
         },
         {
             id:2,
-            name:"hamburguer con bacon",
+            name:"Asian-Style Pork Burgers",
             price:15,
             value:6
         },
         {
             id:3,
-            name:"hamburguer con jamon",
-            price:15,
+            name:"Minetta Burger",
+            price:12,
             value:7
         },
         {
             id:4,
-            name:"hamburguer con jamon",
-            price:15,
+            name:"Nacho Burgers",
+            price:10,
             value:8
         }
     

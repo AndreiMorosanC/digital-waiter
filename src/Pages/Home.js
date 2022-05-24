@@ -10,6 +10,8 @@ import Burger from "../componets/images/hamburgermenu.png"
 import spaghetti from "../componets/images/spaghett.png"
 import desserts from "../componets/images/dessertsmenu.png"
 import CartList from "../componets/OrderList/CartList";
+import ListMenuThree from "../DataMenu/ListMenuThree";
+import ListMenuFour from "../DataMenu/ListMenuFour";
 
 const Home = (props)=>{
 
@@ -17,6 +19,8 @@ const Home = (props)=>{
     const [cartOpenClose,setCartOpenClose] = useState(true)
     const MenuPizza = ListMenuOne
     const Hamburguer = ListMenutwo
+    const Spaghetti = ListMenuThree
+    const Desserts = ListMenuFour
 
 
 
@@ -46,7 +50,7 @@ const Home = (props)=>{
 
 
     const onAdd = (data)=>{
-        const exist = cartItems.find(x=> x.value === data.value);
+        const exist = cartItems.find(x => x.value === data.value);
         if(exist){
             setCartItems(cartItems.map(x=>x.value === data.value ? {...exist, qty:exist.qty + 1}: x))
         }else{
@@ -54,11 +58,11 @@ const Home = (props)=>{
         }
     };
     const onRemove = (data) =>{
-        const exits = cartItems.find((x)=> x.id === data.id)
+        const exits = cartItems.find((x)=> x.value === data.value)
         if(exits.qty === 1){
-          setCartItems(cartItems.filter((x)=>x.id !== data.id))
+          setCartItems(cartItems.filter((x)=>x.value !== data.value))
         }else{
-          setCartItems(cartItems.map(x=> x.id === data.id ? {...exits, qty:exits.qty -1} : x));
+          setCartItems(cartItems.map(x=> x.value === data.value ? {...exits, qty:exits.qty -1} : x));
         }
       };
 
@@ -78,21 +82,21 @@ const Home = (props)=>{
                 imgTittle={Burger}
                 />
                 <MenuComponent                     
-                data={Hamburguer}
+                data={Spaghetti}
                 tittle={"SPAGHETTI"}
                 onAdd={onAdd}
                 imgTittle={spaghetti}
                 />
                 <MenuComponent                     
-                data={Hamburguer}
+                data={Desserts}
                 tittle={"DESSERTS"}
                 onAdd={onAdd}
                 imgTittle={desserts}
                 />
                 <CartList
-                     cartItems={cartItems}
-                     cartOpenClose={cartOpenClose}
-                     setCartOpenClose={setCartOpenClose}
+                    cartItems={cartItems}
+                    cartOpenClose={cartOpenClose}
+                    setCartOpenClose={setCartOpenClose}
                 />
                
             </div>
